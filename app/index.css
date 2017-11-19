@@ -15,6 +15,10 @@ li {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -60,4 +64,47 @@ li {
     color: #ccc;
     text-align: center;
     padding-top: 20px;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav li {
+    margin-right: 15px;
+}
+
+.nav a {
+    color: #b0021b;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    color: #e6e6e6;
+    background: #0a0a0a;
+    border: none;
+    font-size: 16px;
+    border-radius: 3px;
+    width: 200px;
+    text-align: center;
+    display: block;
+    padding: 7px 0;
+    margin: 10px auto;
+}
+
+.button:hover:enabled {
+    background: linear-gradient(#1a1a1a, #0a0a0a);
+}
+
+.button:active {
+    transform: translateY(1px);
 }
